@@ -1,6 +1,13 @@
 // 4 - importação de componentes
 import FirstComponent from "./components/FirstComponent";
 
+// 5 - desestruturando props
+import SecondComponent from "./components/SecondComponent";
+import Desctructuring from "./components/Destructuring";
+
+// 6 - useState
+import State from "./components/State";
+
 function App() {
   // 1 - variáveis
   const name: string = "Arthur";
@@ -24,6 +31,20 @@ function App() {
       )}
       <h3>{userGreeting(name)}</h3>
       <FirstComponent />
+      <SecondComponent name="Segundo" />
+      <Desctructuring
+        title="Primeiro post"
+        content="Algum conteúdo"
+        commentsQty={10}
+        tags={["ts", "js"]}
+      />
+      <Desctructuring
+        title="Segundo post"
+        content="Mais outro conteúdo"
+        commentsQty={5}
+        tags={["python"]}
+      />
+      <State />
     </div>
   );
 }
