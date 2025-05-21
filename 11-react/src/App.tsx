@@ -12,6 +12,7 @@ import State from "./components/State";
 
 // 10 - utilizando contexto
 import Context from "./components/Context";
+import Destructuring from "./components/Destructuring";
 
 // 8 - type
 type textOrNull = string | null;
